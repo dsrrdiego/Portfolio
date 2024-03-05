@@ -1,10 +1,10 @@
 let card = [
     {
         "titulo": "Emerge Cultural",
-        "video":"https://www.youtube.com/embed/nVghq3DFS0g",
+        "video":"https://www.youtube.com/embed/Pk2FgA6MHGc" ,
         "categoria": "Spring Boot Api",
         "fecha": "2022",
-        "descripcion": "Plataforma de audio para musicos independientes al estilo youtube.Ver en youtube por derechos de autor de la musica",
+        "descripcion": "Plataforma de audio para musicos independientes al estilo youtube.",
         "lenguaje": "Java- Spring Boot",
         "repo":"https://github.com/dsrrdiego/emergeSpringBoot.git",
         "link": "",
@@ -12,10 +12,10 @@ let card = [
     },
     {
         "titulo": "Emerge Cultural Front",
-        "video":"https://www.youtube.com/embed/nVghq3DFS0g",
+        "video":"https://www.youtube.com/embed/Pk2FgA6MHGc" ,
         "categoria": "Front con consumo de API",
         "fecha": "2022",
-        "descripcion": "Plataforma de audio para musicos independientes al estilo youtube. Ver en youtube por derechos de autor de la musica",
+        "descripcion": "Plataforma de audio para musicos independientes al estilo youtube.",
         "lenguaje": "JavaScript-html-css",
         "repo":"https://github.com/dsrrdiego/emergeFront.git",
         "link": "https://dsrrdiego.github.io/emergeFront/",
