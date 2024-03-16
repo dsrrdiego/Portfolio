@@ -7,8 +7,8 @@ let card = [
         "descripcion": "Plataforma de audio para musicos independientes al estilo youtube.",
         "lenguaje": "Java- Spring Boot",
         "repo":"https://github.com/dsrrdiego/emergeSpringBoot.git",
-        "link": "http://http://15.228.254.203:8080/",
-        "linkTexto": "visitar!!!"
+        "link": "http://15.228.254.203:8080/",
+        "linkTexto": "Visitar!!!"
     },
     {
         "titulo": "Emerge Cultural Front",
@@ -18,7 +18,7 @@ let card = [
         "descripcion": "Plataforma de audio para musicos independientes al estilo youtube.",
         "lenguaje": "JavaScript-html-css",
         "repo":"https://github.com/dsrrdiego/emergeFront.git",
-        "link": "http://http://15.228.254.203:8080/",
+        "link": "http://15.228.254.203:8080/",
         "linkTexto": "Visitar!!!"
     },
     {
