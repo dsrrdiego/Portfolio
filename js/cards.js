@@ -5,7 +5,7 @@ let card = [
         "categoria": "Spring Boot Api",
         "fecha": "2022",
         "descripcion": "Plataforma de audio para musicos independientes al estilo youtube.",
-        "lenguaje": "Java- Spring Boot",
+        "lenguaje": "Java - Spring Boot - Docker - AWS",
         "repo":"https://github.com/dsrrdiego/emergeSpringBoot.git",
         "link": "http://15.228.254.203:8080/",
         "linkTexto": "Visitar!!!"
