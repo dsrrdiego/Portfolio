@@ -8,7 +8,7 @@ let card = [
         "lenguaje": "Java- Spring Boot",
         "repo":"https://github.com/dsrrdiego/emergeSpringBoot.git",
         "link": "http://http://15.228.254.203:8080/",
-        "linkTexto": ""
+        "linkTexto": "visitar!!!"
     },
     {
         "titulo": "Emerge Cultural Front",
