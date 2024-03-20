@@ -22,6 +22,17 @@ let card = [
         "linkTexto": "Visitar!!!"
     },
     {
+        "titulo": "Network game",
+        "video":"https://www.youtube.com/embed/COXE78SsZXA",
+        "categoria": "Game",
+        "fecha": "2010",
+        "descripcion": "Game engine to play network via socket.",
+        "lenguaje": "Python",
+        "repo":"https://github.com/dsrrdiego/xcom.git",
+        "link": "",
+        "linkTexto": ""
+    },
+    {
         "titulo": "Paint",
         "video": "https://www.youtube.com/embed/NWHWAi-rdzY",
         "categoria": "Gráficos",
@@ -97,6 +108,17 @@ let card = [
         "lenguaje": "Java",
         "repo": "https://github.com/dsrrdiego/BackTrackingYGreedy.git",
         "link": "",
+        "linkTexto": "Visitar!!!"
+    },
+    {
+        "titulo": "Nice dice",
+        "video": "https://www.youtube.com/embed/Bg2e-6djdRk",
+        "categoria": "3d animation",
+        "fecha": "2010",
+        "descripcion": "Nice dice using javascript",
+        "lenguaje": "javaScript",
+        "repo": "https://github.com/dsrrdiego/dado-3d.git",
+        "link": "https://dsrrdiego.github.io/dado-3d/",
         "linkTexto": "Visitar!!!"
     },
     {
