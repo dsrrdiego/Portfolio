@@ -23,10 +23,10 @@ let card = [
     },
     {
         "titulo": "Network game",
-        "video":"https://www.youtube.com/embed/COXE78SsZXA",
+        "video":"https://www.youtube.com/embed/mNfs-mkYVDE",
         "categoria": "Game",
         "fecha": "2010",
-        "descripcion": "Game engine to play network via socket.",
+        "descripcion": "Game to play 2 on a local network.",
         "lenguaje": "Python",
         "repo":"https://github.com/dsrrdiego/xcom.git",
         "link": "",
