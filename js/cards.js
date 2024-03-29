@@ -28,7 +28,7 @@ let card = [
         "fecha": "2010",
         "descripcion": "Game to play 2 on a local network.",
         "lenguaje": "Python",
-        "repo":"https://github.com/dsrrdiego/xcomNuevo.git",
+        "repo":"https://github.com/dsrrdiego/zCom.git",
         "link": "",
         "linkTexto": ""
     },
