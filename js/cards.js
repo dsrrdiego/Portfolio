@@ -7,7 +7,7 @@ let card = [
         "descripcion": "Plataforma de audio para musicos independientes al estilo youtube.",
         "lenguaje": "Java - Spring Boot - Docker - AWS",
         "repo":"https://github.com/dsrrdiego/emergeSpringBoot.git",
-        "link": "http://52.67.115.125:8080/",
+        "link": "https://emergespringboot.onrender.com/",
         "linkTexto": "Visitar!!!"
     },
     {
