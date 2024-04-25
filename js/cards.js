@@ -7,7 +7,7 @@ let card = [
         "descripcion": "Plataforma de audio para musicos independientes al estilo youtube.",
         "lenguaje": "Java - Spring Boot - Docker - AWS",
         "repo":"https://github.com/dsrrdiego/emergeSpringBoot.git",
-        "link": "https://emergespringboot.onrender.com/",
+        "link": "https://dsrrdiego.github.io/emergeF/",
         "linkTexto": "Visitar!!!"
     },
     {
@@ -17,8 +17,8 @@ let card = [
         "fecha": "2022",
         "descripcion": "Plataforma de audio para musicos independientes al estilo youtube.",
         "lenguaje": "JavaScript-html-css",
-        "repo":"https://github.com/dsrrdiego/emergeFront.git",
-        "link": "http://52.67.115.125:8080/",
+        "repo":"https://github.com/dsrrdiego/emergeF.git",
+        "link": "https://dsrrdiego.github.io/emergeF/",
         "linkTexto": "Visitar!!!"
     },
     {
