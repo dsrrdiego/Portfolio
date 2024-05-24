@@ -1,5 +1,16 @@
 let card = [
     {
+        "titulo": "Micro-Notes & Tags",
+        "video": "https://www.youtube.com/embed/uQHNDVFJarw" ,
+        "categoria": "FLUTTER",
+        "fecha": "2024",
+        "descripcion": "Aplicación multiplataforma para tomar NOTAS DE VOZ y etiquetarles descripciones",
+        "lenguaje": "Flutter",
+        "repo": "https://github.com/dsrrdiego/notas.git",
+        "link": "",
+        "linkTexto": "Visitar!!"
+    },
+    {
         "titulo": "Instituto de la Caridad Universa",
         "video": "https://www.youtube.com/embed/lagCclC8cek",
         "categoria": "SPA",
@@ -19,7 +30,7 @@ let card = [
         "lenguaje": "Java - Spring Boot - Docker - AWS",
         "repo":"https://github.com/dsrrdiego/emergeSpringBoot.git",
         "link": "https://dsrrdiego.github.io/emergeF/",
-        "linkTexto": "Visitar!!!"
+        "linkTexto": ""
     },
     {
         "titulo": "Emerge Cultural Front",
