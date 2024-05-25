@@ -1,7 +1,7 @@
 let card = [
     {
         "titulo": "Micro-Notes & Tags",
-        "video": "https://www.youtube.com/embed/uQHNDVFJarw" ,
+        "video": "https://www.youtube.com/embed/opDXLnqacdA",
         "categoria": "FLUTTER",
         "fecha": "2024",
         "descripcion": "Aplicación multiplataforma para tomar NOTAS DE VOZ y etiquetarles descripciones",
