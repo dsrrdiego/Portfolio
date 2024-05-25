@@ -27,22 +27,12 @@ let card = [
         "categoria": "Spring Boot Api",
         "fecha": "2022",
         "descripcion": "Plataforma de audio para musicos independientes al estilo youtube.",
-        "lenguaje": "Java - Spring Boot - Docker - AWS",
+        "lenguaje": "Java - Spring Boot - Docker - AWS - Js - HTML - Css",
         "repo":"https://github.com/dsrrdiego/emergeSpringBoot.git",
         "link": "https://dsrrdiego.github.io/emergeF/",
-        "linkTexto": ""
+        "linkTexto": "Visitar"
     },
-    {
-        "titulo": "Emerge Cultural Front",
-        "video":"https://www.youtube.com/embed/Pk2FgA6MHGc" ,
-        "categoria": "Front con consumo de API",
-        "fecha": "2022",
-        "descripcion": "Plataforma de audio para musicos independientes al estilo youtube.",
-        "lenguaje": "JavaScript-html-css",
-        "repo":"https://github.com/dsrrdiego/emergeF.git",
-        "link": "https://dsrrdiego.github.io/emergeF/",
-        "linkTexto": "Visitar!!!"
-    },
+   
     {
         "titulo": "Network game",
         "video":"https://www.youtube.com/embed/mNfs-mkYVDE",

@@ -1,6 +1,7 @@
 :root {
     --tituloHeight : 40px;
     --miRadio: 7px;
+    --color: rgba(51, 99, 51, 0.568);
 }
 
 *{
@@ -14,7 +15,7 @@ body{
 
 #nombre{
     top:0;
-    background-color: rgb(71, 168, 71);
+    background-color: var(--color);
     position: fixed;
     width:100%;
     height: var(--tituloHeight);
@@ -33,7 +34,7 @@ h1{
     padding-bottom: 30px;
 }
 #miDescripcion h2 {
-    color:rgb(64, 177, 96);
+    color:rgb(34, 92, 50);
     text-align: center;
 }
 section{
@@ -47,12 +48,14 @@ article{
     position: relative;
     width: 20%;
     min-width: 230px;
-    background-color: rgb(73, 142, 85);
+    background-color:var(--color);
+     
     margin: 1px;
     margin-bottom: 30px;
     border-radius: var(--miRadio);
     transition: 0.3s width;
     min-height: 470px;
+    height: 41vw;
 }
 article:hover{
     width:22%;
@@ -66,12 +69,13 @@ article:hover{
 }
 
 .titulo{
-    background-color: rgba(14, 62, 21, 0.356);
+    background-color: var(--color);
     text-align: center;
 }
 .datos{
     padding-left: 10px;
     padding-right: 10px;
+    padding-top:4%;
     overflow: hidden
     
 }
@@ -85,17 +89,21 @@ article:hover{
 }
 .repo{
     display:flex;
-    padding-top: 7px;
+    padding-top: 23px;
 }
 .btnContenedor{
     position: absolute;
     display: flex;
     width:100%;
+    height: 10%;
     bottom:1px;
 }
 .boton{
-    color:green;
-    background-color: green;
+    width:100px;
+    color:var(--color);
+    /* green; */
+    background-color: var(--color);
+    /* green; */
     margin: auto;
     padding: 5px;
     padding-left: 20px;
@@ -103,6 +111,13 @@ article:hover{
     margin-top:10px;
     margin-bottom:10px;
 
+}
+#CV{
+    width:90%;
+    margin-left:5%;
+    /* margin-right:5%; */
+    margin-bottom:20%;
+    height: 715vh;
 }
 
 footer{
