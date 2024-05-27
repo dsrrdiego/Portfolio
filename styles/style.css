@@ -41,6 +41,17 @@ h1 {
     text-align: center;
 }
 
+/* filtros */
+.btnActivotrue {
+    background-color: red;
+    /* color: red; */
+}
+
+.btnActivofalse {
+    background-color: rgb(193, 188, 223);
+    color: rgb(21, 11, 78);
+}
+
 section {
     display: flex;
     flex-wrap: wrap;
