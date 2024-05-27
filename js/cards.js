@@ -122,6 +122,18 @@ let cards = [{
         "linkTexto": "Visitar!!!"
     },
     {
+        "titulo": "Carrito de Compras",
+        "video": "",
+        "imagen": "carrito.webp",
+        "categoria": "Angular Front",
+        "fecha": "2024",
+        "descripcion": "SPA Realizada con Angular con la lógica de un carro de compras implemetada, en este caso contratación de empleados",
+        "lenguaje": "Angular",
+        "repo": "https://github.com/dsrrdiego/SDM.git",
+        "link": "https://stackblitz.com/~/github.com/dsrrdiego/SDM",
+        "linkTexto": "Visitar!!!"
+    },
+    {
         "titulo": "La Tierra Ataca",
         "video": "https://www.youtube.com/embed/PCbXwPe_bR4",
         "categoria": "Juego-Dos",

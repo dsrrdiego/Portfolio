@@ -45,28 +45,30 @@ function btnTag(i) {
 /// sector filtrado
 let card = [];
 
-function filtrarEx(palabra = '') {
+function filtrar(palabra = '') {
     palabra = palabra.toLowerCase();
     card = [];
     for (const c of cards) {
-        if (c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra)) {
-            card.push(c);
-            console.log('agrego x palabra');
-            continue;
-        }
+        // if (c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra)) {
+        //     card.push(c);
+        //     console.log('agrego x palabra');
+        //     continue;
+        // }
+
+        let agregar = true
         for (const t of tags) {
             if (t.activo) {
                 console.log('buscvando por tag' + t.nombre);
                 palabra = t.nombre.toLowerCase();
-                if (c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra)) {
-                    card.push(c);
-                    console.log('agrego x tag');
-
-                    continue;
+                if (!(c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra))) {
+                    // card.push(c);
+                    // console.log('agrego x tag');
+                    agregar = false;
                 }
             }
 
         }
+        if (agregar) card.push(c);
 
     }
     console.log(card);
@@ -74,37 +76,7 @@ function filtrarEx(palabra = '') {
 }
 
 
-function filtrar(palabra = '') {
-    palabra = palabra.toLowerCase();
-    card = cards.slice();
 
-
-    for (const c of cards) {
-        if (!(c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra))) {
-            // card.remove(c);
-            card = card.filter(item => item == c);
-            // card.push(c);
-            // console.log('agrego x palabra');
-            continue;
-        }
-        // for (const t of tags) {
-        //     if (t.activo) {
-        //         console.log('buscvando por tag' + t.nombre);
-        //         palabra = t.nombre.toLowerCase();
-        //         if (c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra)) {
-        //             card.push(c);
-        //             console.log('agrego x tag');
-
-        //             continue;
-        //         }
-        //     }
-
-        // }
-
-    }
-    console.log(card);
-    render()
-}
 ///Sector cards Render
 let section = document.getElementById('section');
 
