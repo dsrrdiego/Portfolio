@@ -105,7 +105,7 @@ let cards = [{
         "categoria": "Back",
         "fecha": "2023",
         "descripcion": "Técnicas aplicadas a encontrar la mínima construcción de túneles para una red de subtes",
-        "lenguaje": "Java",
+        "lenguaje": "Java ",
         "repo": "https://github.com/dsrrdiego/BackTrackingYGreedy.git",
         "link": "",
         "linkTexto": "Visitar!!!"

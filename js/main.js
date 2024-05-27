@@ -1,42 +1,24 @@
 ///sector search Render
-let tags = [{
-    "nombre": 'Angular',
-    "activo": false
-}, {
-    "nombre": 'C++',
-    "activo": false
-}, {
-    "nombre": 'Java',
-    "activo": false
-}, {
-    "nombre": 'JavaScript',
-    "activo": false
-}, {
-    "nombre": 'Juego',
-    "activo": false
-}, {
-    "nombre": 'OpenGL',
-    "activo": false
-}, {
-    "nombre": 'astronómica',
-    "activo": false
-}];
+
 let filtro = [];
 let sectorTags = document.getElementById('sectionTags');
 let btnsTag = [];
 
+let buscarPalabra = document.createElement('input');
+buscarPalabra.addEventListener("input", () => filtrar(buscarPalabra.value));
+buscarPalabra.placeholder = "buscar"
+sectionTags.appendChild(buscarPalabra);
+
 for (let i = 0; i < tags.length; i++) {
     let btn = document.createElement('button');
     btn.innerHTML = tags[i].nombre;
-    btn.classList.add(`btnEnable${tags[i].activo}`);
+    btn.classList.add(`btnActivo${tags[i].activo}`);
+
     btn.addEventListener("click", () => btnTag(i));
     btnsTag.push(btn);
     sectionTags.appendChild(btn);
 }
-let buscarPalabra = document.createElement('input');
-buscarPalabra.addEventListener("input", () => filtrar(buscarPalabra.value));
 
-sectionTags.appendChild(buscarPalabra);
 
 function btnTag(i) {
     tags[i].activo = !tags[i].activo;
@@ -55,30 +37,27 @@ function filtrar(palabra = '') {
     palabra = palabra.toLowerCase();
     card = [];
     for (const c of cards) {
-        if (c.titulo == "GALAXY" || c.titulo.toLowerCase() == "carrera de caracoles") {
-            let agregarXPalabra = true
-            let agregarXTag = true
-            if (palabra != '') {
-                // if (!((c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra)))) {
-                if (!((c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra)))) {
-                    agregarXPalabra = false;
-                    console.log('borrando ' + c.titulo);
+        let agregarXPalabra = true
+        let agregarXTag = true
+
+
+        for (const t of tags) {
+            if (t.activo) {
+                palabra = t.nombre.toLowerCase();
+                if (!(c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra))) {
+                    agregarXTag = false;
                 }
             }
-
-            for (const t of tags) {
-                if (t.activo) {
-                    palabra = t.nombre.toLowerCase();
-                    if (!(c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra))) {
-                        // if (!(c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra))) {
-                        agregarXTag = false;
-                    }
-                }
-
-            }
-            if (agregarXPalabra && agregarXTag) card.push(c);
 
         }
+        if (palabra != '') {
+            if (!((c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra)))) {
+                agregarXPalabra = false;
+                console.log('borrando ' + c.titulo);
+            }
+        }
+        if (agregarXPalabra && agregarXTag) card.push(c);
+
     }
     render()
 }
