@@ -12,6 +12,12 @@ let tags = [{
     "nombre": 'JavaScript',
     "activo": false
 }, {
+    "nombre": 'Juego',
+    "activo": false
+}, {
+    "nombre": 'OpenGL',
+    "activo": false
+}, {
     "nombre": 'astronómica',
     "activo": false
 }];
@@ -38,40 +44,40 @@ function btnTag(i) {
     btnsTag[i].classList.remove('btnActivofalse');
     btnsTag[i].classList.add(`btnActivo${tags[i].activo}`);
 
-    console.log(tags[i].nombre + tags[i].activo);
-    filtrar();
+    filtrar(buscarPalabra.value);
 
 }
 /// sector filtrado
 let card = [];
 
 function filtrar(palabra = '') {
+    console.log(palabra);
     palabra = palabra.toLowerCase();
     card = [];
     for (const c of cards) {
-        // if (c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra)) {
-        //     card.push(c);
-        //     console.log('agrego x palabra');
-        //     continue;
-        // }
+        // if (c.titulo == "GALAXY" || c.titulo.toLowerCase() == "carrera de caracoles") {
+        let agregarXPalabra = true
+        let agregarXTag = true
+        if (palabra != '') {
+            if (!((c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra)))) {
+                agregarXPalabra = false;
+                console.log('borrando ' + c.titulo);
+            }
+        }
 
-        let agregar = true
         for (const t of tags) {
             if (t.activo) {
-                console.log('buscvando por tag' + t.nombre);
                 palabra = t.nombre.toLowerCase();
                 if (!(c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra))) {
-                    // card.push(c);
-                    // console.log('agrego x tag');
-                    agregar = false;
+                    agregarXTag = false;
                 }
             }
 
         }
-        if (agregar) card.push(c);
+        if (agregarXPalabra && agregarXTag) card.push(c);
 
+        // }
     }
-    console.log(card);
     render()
 }
 
