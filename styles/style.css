@@ -10,6 +10,7 @@
 }
 
 body {
+    /* position: relative; */
     background: url(../imagenes/fondo.jpeg) center/cover no-repeat;
 }
 
@@ -43,16 +44,61 @@ h1 {
 
 /* filtros */
 
+#btnBuscar {
+    position: absolute;
+    top: 8%;
+    right: 03%;
+    width: 80px;
+    height: 80px;
+    background: url(../imagenes/lupa.webp)center;
+    border: none;
+}
+
+#btnBuscar:hover {
+
+
+    width: 100px;
+    height: 100px;
+}
+
 
 #sectionTags {
+    position: relative;
     background-color: rgb(216, 207, 207);
-    display: flex;
     padding: 1%;
     /* justify-content: flex-end; */
     border-radius: 3%;
     width: 90%;
-    margin-left: 3%;
+    /* margin-left: 3%; */
     margin-bottom: 3%;
+    /* margin-left: 100%; */
+    /* transition: left 1s ease; */
+    /* display: flex; */
+    /* animation: slideLeft 3s forwards; */
+    animation: slideLeft 1s forwards;
+
+
+
+}
+
+@keyframes slideLeft {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 3%;
+    }
+}
+
+/* 
+.visible {
+    display: flex;
+    animation: slideLeft 1s forwards;
+} */
+
+.inVisible {
+    display: none;
 }
 
 #sectionTags button {
@@ -86,6 +132,7 @@ h1 {
 }
 
 section {
+
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;

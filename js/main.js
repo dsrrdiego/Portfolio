@@ -1,3 +1,4 @@
+//boton buscar
 ///sector search Render
 
 let filtro = [];
@@ -9,6 +10,7 @@ buscarPalabra.addEventListener("input", () => filtrar(buscarPalabra.value));
 buscarPalabra.placeholder = "buscar"
 sectionTags.appendChild(buscarPalabra);
 
+
 for (let i = 0; i < tags.length; i++) {
     let btn = document.createElement('button');
     btn.innerHTML = tags[i].nombre;
@@ -18,7 +20,8 @@ for (let i = 0; i < tags.length; i++) {
     btnsTag.push(btn);
     sectionTags.appendChild(btn);
 }
-
+sectorTags.classList.toggle('inVisible');
+let bt = document.getElementById('btnBuscar').addEventListener('click', () => sectorTags.classList.toggle('inVisible'));
 
 function btnTag(i) {
     tags[i].activo = !tags[i].activo;
