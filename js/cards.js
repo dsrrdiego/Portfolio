@@ -1,5 +1,4 @@
-let card = [
-    {
+let card = [{
         "titulo": "Micro-Notes & Tags",
         "video": "https://www.youtube.com/embed/opDXLnqacdA",
         "categoria": "FLUTTER",
@@ -23,24 +22,24 @@ let card = [
     },
     {
         "titulo": "Emerge Cultural",
-        "video":"https://www.youtube.com/embed/Pk2FgA6MHGc" ,
+        "video": "https://www.youtube.com/embed/Pk2FgA6MHGc",
         "categoria": "Spring Boot Api",
         "fecha": "2022",
         "descripcion": "Plataforma de audio para musicos independientes al estilo youtube.",
         "lenguaje": "Java - Spring Boot - Docker - AWS - Js - HTML - Css",
-        "repo":"https://github.com/dsrrdiego/emergeSpringBoot.git",
+        "repo": "https://github.com/dsrrdiego/emergeSpringBoot.git",
         "link": "https://dsrrdiego.github.io/emergeF/",
         "linkTexto": "Visitar"
     },
-   
+
     {
         "titulo": "Network game",
-        "video":"https://www.youtube.com/embed/mNfs-mkYVDE",
+        "video": "https://www.youtube.com/embed/mNfs-mkYVDE",
         "categoria": "Game",
         "fecha": "2010",
         "descripcion": "Game to play 2 on a local network.",
         "lenguaje": "Python",
-        "repo":"https://github.com/dsrrdiego/zCom.git",
+        "repo": "https://github.com/dsrrdiego/zCom.git",
         "link": "",
         "linkTexto": ""
     },
@@ -102,7 +101,7 @@ let card = [
     {
         "titulo": "Greedy y Backtracking",
         "video": "",
-        "imagen":"subte.png",
+        "imagen": "subte.png",
         "categoria": "Back",
         "fecha": "2023",
         "descripcion": "Técnicas aplicadas a encontrar la mínima construcción de túneles para una red de subtes",
@@ -123,6 +122,17 @@ let card = [
         "linkTexto": "Visitar!!!"
     },
     {
+        "titulo": "Carrito de Compras",
+        "video": "",
+        "imagen": "carrito.webp",
+        "categoria": "Angular Front",
+        "fecha": "2024",
+        "descripcion": "SPA Realizada con Angular con la lógica de un carro de compras implemetada, en este caso contratación de empleados",
+        "lenguaje": "Angular",
+        "repo": "https://github.com/dsrrdiego/SDM.git",
+        "link": "https://stackblitz.com/~/github.com/dsrrdiego/SDM",
+        "linkTexto": "Visitar!!!"
+    }, {
         "titulo": "La Tierra Ataca",
         "video": "https://www.youtube.com/embed/PCbXwPe_bR4",
         "categoria": "Juego-Dos",
@@ -136,7 +146,7 @@ let card = [
     {
         "titulo": "Varios ya perdidos:",
         "video": "",
-        "imagen":"lost.png",
+        "imagen": "lost.png",
         "categoria": "",
         "fecha": "",
         "descripcion": "* Interprete de programación para escribir código orientado a objetos para BASIC. * Administrador de pacientes para consultorios médicos. * Sistema administrativos para planillas CONTRALOR de insituciones educativas. * Programas de administración y gestión de clientes. * Réplicas de varios vide-juegos: De carrera - estilo doom (con motores gráficos propios)- sistemas de dibujo 3d al estilo sketch-up. * etc.",
@@ -163,6 +173,3 @@ let card = [
     
     
 */
-
-
-
