@@ -55,28 +55,30 @@ function filtrar(palabra = '') {
     palabra = palabra.toLowerCase();
     card = [];
     for (const c of cards) {
-        // if (c.titulo == "GALAXY" || c.titulo.toLowerCase() == "carrera de caracoles") {
-        let agregarXPalabra = true
-        let agregarXTag = true
-        if (palabra != '') {
-            if (!((c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra)))) {
-                agregarXPalabra = false;
-                console.log('borrando ' + c.titulo);
-            }
-        }
-
-        for (const t of tags) {
-            if (t.activo) {
-                palabra = t.nombre.toLowerCase();
-                if (!(c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra))) {
-                    agregarXTag = false;
+        if (c.titulo == "GALAXY" || c.titulo.toLowerCase() == "carrera de caracoles") {
+            let agregarXPalabra = true
+            let agregarXTag = true
+            if (palabra != '') {
+                // if (!((c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra)))) {
+                if (!((c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra)))) {
+                    agregarXPalabra = false;
+                    console.log('borrando ' + c.titulo);
                 }
             }
 
-        }
-        if (agregarXPalabra && agregarXTag) card.push(c);
+            for (const t of tags) {
+                if (t.activo) {
+                    palabra = t.nombre.toLowerCase();
+                    if (!(c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra))) {
+                        // if (!(c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra))) {
+                        agregarXTag = false;
+                    }
+                }
 
-        // }
+            }
+            if (agregarXPalabra && agregarXTag) card.push(c);
+
+        }
     }
     render()
 }
