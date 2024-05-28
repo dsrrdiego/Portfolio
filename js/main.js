@@ -27,9 +27,10 @@ function crearArticulos(cards) {
     return string;
 }
 
+const footer = document.getElementById('footer');
+const footerMas = document.getElementById('footerMas');
+
 window.addEventListener('scroll', function() {
-    const footer = document.getElementById('footer');
-    const footerMas = document.getElementById('footerMas');
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         footer.classList.add('agrandarFooter');
         footerMas.classList.remove('footerMas');

@@ -240,13 +240,11 @@ footer h3 {
     margin: 8px;
 }
 
-#footerMas {
-    /* display: none; */
-    color: red;
+.footerMas {
+    display: none;
 }
 
 .agrandarFooter {
-    /* height: 20%; */
     animation: 1s footerAnm forwards;
 }
 
