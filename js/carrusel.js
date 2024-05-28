@@ -6,7 +6,6 @@ class Carrusel {
         this.btnMenos.innerHTML = "<";
         this.btnMenos.onclick = () => this.click(-1);
         this.btnMenos.classList.add('carruselBtn');
-        this.btnMenos.classList.add('carruselBtnMenos');
 
 
         this.slide = document.createElement('div');
