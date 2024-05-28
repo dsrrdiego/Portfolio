@@ -3,18 +3,23 @@ class Carrusel {
         this.carrusel = document.createElement('div');
         this.carrusel.classList.add('flex');
         this.btnMenos = document.createElement('button');
-        this.btnMenos.innerHTML = "---";
+        this.btnMenos.innerHTML = "<";
         this.btnMenos.onclick = () => this.click(-1);
+        this.btnMenos.classList.add('carruselBtn');
+        this.btnMenos.classList.add('carruselBtnMenos');
+
 
         this.slide = document.createElement('div');
         this.slide.classList.add('flex');
-        // this.slide.classList.add('scroll');
+        this.slide.classList.add('carruselSlide');
         this.slide.innerHTML = cards;
 
 
         this.btnMas = document.createElement('button');
-        this.btnMas.innerHTML = "++";
+        this.btnMas.innerHTML = ">";
         this.btnMas.onclick = () => this.click(1);
+        this.btnMas.classList.add('carruselBtn');
+        this.btnMas.classList.add('carruselBtnMas');
 
 
         this.carrusel.appendChild(this.btnMenos);

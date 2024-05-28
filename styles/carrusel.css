@@ -1,11 +1,45 @@
 .flex {
+    position: relative;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
-/* 
-.scroll {
-    overflow-x: scroll;
-} */
+.carruselBtn {
+    position: absolute;
+    background-color: rgba(66, 145, 70, 0.932);
+    width: 5%;
+    height: 15%;
+    border: none;
+    top: 50%;
+    z-index: 2;
+    border-radius: 15%;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(38, 68, 68);
+    transition: border-radius 0.5s ease;
+}
+
+.carruselBtn:hover {
+    background-color: rgba(81, 128, 93, 0.432);
+    border-radius: 50%;
+}
+
+.carruselBtnMenos {}
+
+.carruselBtnMas {
+    right: calc(0px + 3%);
+}
+
+.carruselSlide {
+    /* width: 87%; */
+    width: 75%;
+    margin-left: 6%;
+    background-color: rgba(207, 186, 186, 0.384);
+    padding: 0.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* margin: 1%; */
+    border-radius: 2%;
+}
