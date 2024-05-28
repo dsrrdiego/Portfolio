@@ -26,7 +26,7 @@ function renderFiltros(tags) {
         btnsTag[i].classList.remove('btnActivofalse');
         btnsTag[i].classList.add(`btnActivo${tags[i].activo}`);
 
-        filtrar();
+        filtrar(buscarPalabra.value);
 
     }
 
@@ -36,10 +36,12 @@ function filtrar(palabraDelInput = '') {
 
     let palabrasABuscar = [''];
     palabrasABuscar.push(palabraDelInput);
+    console.log(palabraDelInput);
     for (const tag of tags)
         if (tag.activo) palabrasABuscar.push(tag.nombre);
 
-    card = filtrado(cards, palabrasABuscar);
+    let filtrados = filtrado(cards, palabrasABuscar);
+    render(filtrados);
 
 
 }

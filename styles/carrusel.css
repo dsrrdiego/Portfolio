@@ -1,0 +1,11 @@
+.flex {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* 
+.scroll {
+    overflow-x: scroll;
+} */

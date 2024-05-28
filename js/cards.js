@@ -71,7 +71,7 @@ let cards = [{
         "categoria": "Utilidad astronómica",
         "fecha": "2020",
         "descripcion": "Implementacion de las leyes de Newton de objetos astronomicos para calcular colisiones y proyectar trayectorias de vehiculos",
-        "lenguaje": "Lenguaje: C++ / OpenGL",
+        "lenguaje": "C++ / OpenGL",
         "repo": "https://github.com/dsrrdiego/galaxy.git",
         "link": "",
         "linkTexto": ""

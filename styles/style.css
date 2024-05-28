@@ -131,17 +131,6 @@ h1 {
     color: rgb(21, 11, 78);
 }
 
-#sectorCarruseles {
-    overflow-x: hidden;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-#slide {
-    overflow-x: hidden;
-    display: flex;
-    flex-wrap: nowrap;
-}
 
 section {
 
