@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H5F9P5Q7PT"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-H5F9P5Q7PT');
@@ -15,31 +19,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DSRR PORTFOLIO</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/carrusel.css">
     <link rel="shortcut icon" href="imagenes/icono.png" type="image/png">
 </head>
 
 <body>
-  
+
     <div id="nombre">
-        <h1>Diego S. Rodriguez Recalde PORTFOLIO & PROFILE</h1>
+        <h1>Diego S. Rodriguez Recalde PORTFOLIO & PROFILE </h1>
+        <a id="CV" href="#CVContainer">Ver cv</a>
     </div>
     <div id="miDescripcion">
         <h2> Técnico Universitario en Desarrollo de Aplicaciones Informaticas. </h2>
-        <h2> UNICEN Universidad Nacional del Centro de la Provincia de Buenos Aires. 
-            <a href="#CV">Ver cv</a>
-            </h2>
-    </div>
-    <!-- <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script> -->
-    <!-- <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="diego-rodriguez-9183a628b" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ar.linkedin.com/in/diego-rodriguez-9183a628b?trk=profile-badge">Diego Rodriguez</a></div> -->
+        <h2> UNICEN Universidad Nacional del Centro de la Provincia de Buenos Aires.
 
-    <section id="section"></section>
-    <iframe id="CV" src="https://docs.google.com/document/d/15k-j1wiQvIRbr94gdnL7MsL85hBnebRHr8J61CV-RkA/" style="border:none;"></iframe>
-    
-    <footer>
+        </h2>
+    </div>
+    <img id="btnBuscar"></img>
+    <section id="sectionTags"></section>
+    <section id="carrusel"> </section>
+
+
+    <embed id="CVContainer" src=" ../cv/cv.html" type="text/html"></embed>
+
+    <footer id="footer">
         <h3>Contacto: dsrrdiego@hotmail.com TEL +549 2983 606824</h3>
     </footer>
 
 </body>
+<script src="js/carrusel.js"></script>
+<script src="js/filtros.js"></script>
+<script src="js/tags.js"></script>
 <script src="js/cards.js"></script>
 <script src="js/main.js"></script>
 

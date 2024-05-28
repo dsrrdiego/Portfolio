@@ -1,4 +1,4 @@
-let card = [{
+let cards = [{
         "titulo": "Micro-Notes & Tags",
         "video": "https://www.youtube.com/embed/opDXLnqacdA",
         "categoria": "FLUTTER",
@@ -26,7 +26,7 @@ let card = [{
         "categoria": "Spring Boot Api",
         "fecha": "2022",
         "descripcion": "Plataforma de audio para musicos independientes al estilo youtube.",
-        "lenguaje": "Java - Spring Boot - Docker - AWS - Js - HTML - Css",
+        "lenguaje": "Java - SpringBoot - Docker - AWS - Js - HTML - Css",
         "repo": "https://github.com/dsrrdiego/emergeSpringBoot.git",
         "link": "https://dsrrdiego.github.io/emergeF/",
         "linkTexto": "Visitar"
@@ -71,7 +71,7 @@ let card = [{
         "categoria": "Utilidad astronómica",
         "fecha": "2020",
         "descripcion": "Implementacion de las leyes de Newton de objetos astronomicos para calcular colisiones y proyectar trayectorias de vehiculos",
-        "lenguaje": "Lenguaje: C++ / OpenGL",
+        "lenguaje": "C++ / OpenGL",
         "repo": "https://github.com/dsrrdiego/galaxy.git",
         "link": "",
         "linkTexto": ""
@@ -105,7 +105,7 @@ let card = [{
         "categoria": "Back",
         "fecha": "2023",
         "descripcion": "Técnicas aplicadas a encontrar la mínima construcción de túneles para una red de subtes",
-        "lenguaje": "Java",
+        "lenguaje": "Java ",
         "repo": "https://github.com/dsrrdiego/BackTrackingYGreedy.git",
         "link": "",
         "linkTexto": "Visitar!!!"
@@ -132,7 +132,8 @@ let card = [{
         "repo": "https://github.com/dsrrdiego/SDM.git",
         "link": "https://stackblitz.com/~/github.com/dsrrdiego/SDM",
         "linkTexto": "Visitar!!!"
-    }, {
+    },
+    {
         "titulo": "La Tierra Ataca",
         "video": "https://www.youtube.com/embed/PCbXwPe_bR4",
         "categoria": "Juego-Dos",
