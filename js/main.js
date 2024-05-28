@@ -62,3 +62,12 @@ function crearArticulos(cards) {
     }
     return string;
 }
+
+window.addEventListener('scroll', function() {
+    const footer = document.getElementById('footer');
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        footer.classList.add('agrandarFooter');
+    } else {
+        footer.classList.remove('agrandarFooter');
+    }
+});
