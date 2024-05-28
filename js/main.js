@@ -1,6 +1,3 @@
-//boton buscar
-///sector search Render
-// let carrusel = document.getElementById("sectorCarruseles");
 let slide = document.getElementById('slide');
 document.getElementById('btnSlideMenos').addEventListener('click', () => btnSlide(-1));
 document.getElementById('btnSlideMas').addEventListener('click', () => btnSlide(1));
@@ -33,40 +30,46 @@ function btnTag(i) {
     btnsTag[i].classList.remove('btnActivofalse');
     btnsTag[i].classList.add(`btnActivo${tags[i].activo}`);
 
-    filtrar(buscarPalabra.value);
+    filtrar();
 
 }
+
 /// sector filtrado
 let card = [];
 
-function filtrar(palabra = '') {
-    console.log(palabra);
-    palabra = palabra.toLowerCase();
-    card = [];
-    for (const c of cards) {
-        let agregarXPalabra = true
-        let agregarXTag = true
+function filtrar(palabraDelInput = '') {
 
+    let palabrasABuscar = [''];
+    palabrasABuscar.push(palabraDelInput);
+    for (const tag of tags) {
+        if (tag.activo) palabrasABuscar.push(tag.nombre);
 
-        for (const t of tags) {
-            if (t.activo) {
-                palabra = t.nombre.toLowerCase();
-                if (!(c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra))) {
-                    agregarXTag = false;
-                }
-            }
-
-        }
-        if (palabra != '') {
-            if (!((c.titulo.toLowerCase().includes(palabra) || c.categoria.toLowerCase().includes(palabra) || c.descripcion.toLowerCase().includes(palabra) || c.fecha.toLowerCase().includes(palabra) || c.lenguaje.toLowerCase().includes(palabra)))) {
-                agregarXPalabra = false;
-                console.log('borrando ' + c.titulo);
-            }
-        }
-        if (agregarXPalabra && agregarXTag) card.push(c);
 
     }
+
+    card = filtrado(cards, palabrasABuscar);
+
     render2()
+}
+
+function filtrado(cards, claves) {
+    let filtradas = [];
+    for (const c of cards) {
+        let agregar = false;
+        for (let p of claves) {
+            p = p.toLowerCase();
+            for (let attr in c) {
+                if (c[attr].toLowerCase().includes(p)) {
+                    agregar = true;
+                    break;
+                }
+                agregar = false;
+            }
+            if (!agregar) break;
+        }
+        if (agregar) filtradas.push(c);
+    }
+    return filtradas;
 }
 
 
