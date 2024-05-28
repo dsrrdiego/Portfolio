@@ -47,6 +47,7 @@ h1 {
     font-size: 25px;
     padding: 0%;
     border-radius: 7%;
+    text-wrap: nowrap;
 }
 
 #CV:hover {
