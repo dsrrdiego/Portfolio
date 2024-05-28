@@ -151,7 +151,7 @@ h1 {
 article {
     position: relative;
     width: 20%;
-    min-width: 230px;
+    min-width: 350px;
     background-color: var(--color);
 
     margin: 1px;
@@ -222,8 +222,8 @@ article:hover {
     width: 60%;
     margin-top: 10%;
     margin-left: 20%;
-    height: 270vw;
-    margin-bottom: 10%;
+    height: 140vw;
+    margin-bottom: 15%;
 }
 
 #footer {
@@ -231,7 +231,6 @@ article:hover {
     bottom: 0;
     width: 100%;
     background-color: rgb(71, 168, 71);
-
 }
 
 
@@ -241,7 +240,27 @@ footer h3 {
     margin: 8px;
 }
 
-.agrandarFooter {
-    height: 20%;
+#footerMas {
+    /* display: none; */
+    color: red;
+}
 
+.agrandarFooter {
+    /* height: 20%; */
+    animation: 1s footerAnm forwards;
+}
+
+.footerMas {
+    display: none;
+}
+
+@keyframes footerAnm {
+    0% {
+        height: 0%;
+    }
+
+    100% {
+        height: 20%;
+
+    }
 }

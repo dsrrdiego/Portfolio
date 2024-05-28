@@ -1,14 +1,4 @@
 renderFiltros(tags);
-
-
-
-
-// let slide = document.getElementById('slide');
-// document.getElementById('btnSlideMenos').addEventListener('click', () => btnSlide(-1));
-// document.getElementById('btnSlideMas').addEventListener('click', () => btnSlide(1));
-/// sector filtrado
-// let card = [];
-
 filtrar();
 
 function render(filtrados) {
@@ -16,32 +6,6 @@ function render(filtrados) {
     let carruselDiv = document.getElementById('carrusel');
     let carrusel = new Carrusel(carruselDiv, articulos);
 }
-// render(cards);
-// render()
-
-// function btnSlide(sentido) {
-//     // indice[i] += sentido;
-//     // if (indice[i] == -1) indice[i] = carruseles[i].cards.length - 1;
-//     // if (indice[i] == carruseles[i].cards.length) indice[i] = 0;
-//     // console.log(indice[i]);
-//     // const sli = document.getElementById("slide" + i);
-//     slide.scrollLeft += 100 * sentido;
-//     // slide.scrollLeft = indice[i] * sli.offsetWidth;
-//     // }
-
-//     //     // document.getElementById("enviar").addEventListener("click", enviar);
-//     //     // document.getElementById("mensaje");
-
-//     //     // function enviar() {
-//     //     //     var link =
-//     //     //         "https://wa.me/" +
-//     //     //         "+5492983606824" +
-//     //     //         "?text=" +
-//     //     //         encodeURIComponent(mensaje.value);
-//     //     //     window.open(link);
-// }
-
-
 
 function crearArticulos(cards) {
     let string = '';
@@ -65,9 +29,12 @@ function crearArticulos(cards) {
 
 window.addEventListener('scroll', function() {
     const footer = document.getElementById('footer');
+    const footerMas = document.getElementById('footerMas');
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         footer.classList.add('agrandarFooter');
+        footerMas.classList.remove('footerMas');
     } else {
         footer.classList.remove('agrandarFooter');
+        footerMas.classList.add('footerMas');
     }
 });
