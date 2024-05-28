@@ -15,8 +15,8 @@ body {
 }
 
 #nombre {
-
-    top: 0;
+    display: flex;
+    /* justify-content: space-around; */
     background-color: var(--color);
     position: fixed;
     width: 100%;
@@ -27,9 +27,28 @@ body {
 }
 
 h1 {
-    text-align: center;
+    width: 90%;
+    padding-left: 25%;
     color: aliceblue;
     white-space: nowrap;
+}
+
+#CV {
+    /* position: absolute; */
+    /* padding-left: 6%;*/
+    width: 10%;
+    color: rgb(68, 41, 41);
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 0.45%;
+    padding: 0;
+    */
+    /* height: 0; */
+    /* right: 0%; */
+}
+
+#CV:hover {
+    color: beige;
 }
 
 #miDescripcion {
@@ -216,13 +235,7 @@ article:hover {
 
 }
 
-#CV {
-    width: 90%;
-    margin-left: 5%;
-    /* margin-right:5%; */
-    margin-bottom: 20%;
-    height: 715vh;
-}
+
 
 footer {
     position: fixed;
