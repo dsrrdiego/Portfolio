@@ -163,7 +163,7 @@ article {
 }
 
 article:hover {
-    width: 22%;
+    width: 25%;
 }
 
 .video {
@@ -201,7 +201,7 @@ article:hover {
 
 
 .boton {
-    /* position: absolute; */
+    position: absolute;
     width: 50%;
     color: var(--color);
     /* green; */
@@ -211,13 +211,15 @@ article:hover {
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 25%;
-    margin-top: 10%;
+    /* margin-top: 10%; */
     margin-bottom: 10%;
-
+    top: 92%;
+    /* bottom: 0%; */
 }
 
 #CVContainer {
     width: 60%;
+    margin-top: 10%;
     margin-left: 20%;
     height: 270vw;
     margin-bottom: 10%;
@@ -228,7 +230,6 @@ article:hover {
     bottom: 0;
     width: 100%;
     background-color: rgb(71, 168, 71);
-    /* transition: height 1.5s ease; */
 
 }
 
@@ -244,6 +245,6 @@ footer h3 {
 }
 
 .agrandarFooter {
-    height: 10%;
+    height: 20%;
 
 }
