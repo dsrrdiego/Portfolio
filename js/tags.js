@@ -1,4 +1,4 @@
-let tagss = ['Angular', 'C++', 'Java ', 'JavaScript', 'SpringBoot', "API", "SPA", "Flutter", "Juego", "Graficos", "Carrito", "3D", "TestNg"];
+let tagss = ['Angular', 'C++', 'Java ', 'JavaScript', 'SpringBoot', "API", "SPA", "Flutter", "Juego", "Graficos", "Carrito", "3D"];
 let tags = [];
 for (const t of tagss) {
     let tag = {

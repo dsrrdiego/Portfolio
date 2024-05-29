@@ -13,7 +13,6 @@
 
 body {
     background: url(../imagenes/fondo.jpeg) center/cover no-repeat;
-    perspective: 15000px;
 
 }
 
@@ -68,7 +67,7 @@ h1 {
 /* filtros */
 #btnBuscar {
     position: absolute;
-    top: 2%;
+    top: 8%;
     right: 1%;
     width: 60px;
     height: 60px;
@@ -290,7 +289,22 @@ footer h1 {
     }
 
     100% {
-        height: 17%;
+        height: 15%;
 
     }
+}
+
+#wasapIcon {
+    position: fixed;
+    width: 65px;
+    z-index: 10;
+    right: 1%;
+    bottom: 2%;
+    transition: right 0.1s ease-in-out, width 0.1s ease-in-out;
+}
+
+#wasapIcon:hover {
+    right: 1.3%;
+    width: 80px;
+
 }

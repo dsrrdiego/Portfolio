@@ -8,7 +8,7 @@ let cards = [{
         "repo": "https://github.com/dsrrdiego/notas.git",
         "link": "",
         "linkTexto": "Visitar!!",
-        "tags": ['Android', 'xxx', 'otorrino']
+        "tags": ['Android', 'web', 'app', 'aplication', 'linux']
     },
     {
         "titulo": "Instituto de la Caridad Universa",
@@ -20,6 +20,8 @@ let cards = [{
         "repo": "https://github.com/dsrrdiego/I.C.U..git",
         "link": "https://dsrrdiego.github.io/I.C.U./",
         "linkTexto": "Visitar!!",
+        "tags": ['web', 'app', 'aplication', 'front']
+
 
     },
     {
@@ -31,7 +33,9 @@ let cards = [{
         "lenguaje": "Java - SpringBoot - Docker - AWS - Js - HTML - Css",
         "repo": "https://github.com/dsrrdiego/emergeSpringBoot.git",
         "link": "https://dsrrdiego.github.io/emergeF/",
-        "linkTexto": "Visitar"
+        "linkTexto": "Visitar",
+        "tags": ['web', 'app', 'aplication', 'front', 'back']
+
     },
 
     {
@@ -44,7 +48,7 @@ let cards = [{
         "repo": "https://github.com/dsrrdiego/zCom.git",
         "link": "",
         "linkTexto": "",
-        "tags": ['zzz', 'xxx', 'otorrino']
+        "tags": ['blender', '3d', 'red', 'socket ', 'graficos']
 
     },
     {
@@ -56,7 +60,9 @@ let cards = [{
         "lenguaje": "JavaScript",
         "repo": "https://github.com/dsrrdiego/paint.git",
         "link": "https://dsrrdiego.github.io/paint/",
-        "linkTexto": "Visitar!!!"
+        "linkTexto": "Visitar!!!",
+        "tags": ['web', 'grafics', 'front']
+
     },
     {
         "titulo": "KattYMatt",
@@ -68,7 +74,8 @@ let cards = [{
         "repo": "https://github.com/dsrrdiego/KatyMath.git",
         "link": "http://mattykatt.com.ar",
         "linkTexto": "Jugar!!!",
-        "tags": ['Android', 'xxx', 'otorrino']
+        "tags": ['web', 'grafics', 'front']
+
 
     },
     {
@@ -80,7 +87,9 @@ let cards = [{
         "lenguaje": "C++ / OpenGL",
         "repo": "https://github.com/dsrrdiego/galaxy.git",
         "link": "",
-        "linkTexto": ""
+        "linkTexto": "",
+        "tags": ['grafics', 'front']
+
     },
     {
         "titulo": "Carrera de Caracoles",
@@ -91,7 +100,10 @@ let cards = [{
         "lenguaje": "C++ / OpenGL",
         "repo": "https://github.com/dsrrdiego/carreraDeCaracoles.git",
         "link": "",
-        "linkTexto": ""
+        "linkTexto": "",
+        "tags": ['grafics', 'front', 'back']
+
+
     },
     {
         "titulo": "Manipulador de imágenes",
@@ -102,7 +114,9 @@ let cards = [{
         "lenguaje": "JavaScript",
         "repo": "https://github.com/dsrrdiego/manipular-graficos.git",
         "link": "https://dsrrdiego.github.io/manipular-graficos/",
-        "linkTexto": "Visitar!!!"
+        "linkTexto": "Visitar!!!",
+        "tags": ['web', 'grafics', 'front']
+
     },
     {
         "titulo": "Greedy y Backtracking",
@@ -114,7 +128,10 @@ let cards = [{
         "lenguaje": "Java ",
         "repo": "https://github.com/dsrrdiego/BackTrackingYGreedy.git",
         "link": "",
-        "linkTexto": "Visitar!!!"
+        "linkTexto": "Visitar!!!",
+        "tags": ['back', 'algoritmo']
+
+
     },
     {
         "titulo": "Nice dice",
@@ -125,7 +142,9 @@ let cards = [{
         "lenguaje": "javaScript",
         "repo": "https://github.com/dsrrdiego/dado-3d.git",
         "link": "https://dsrrdiego.github.io/dado-3d/",
-        "linkTexto": "Visitar!!!"
+        "linkTexto": "Visitar!!!",
+        "tags": ['web', 'grafics', 'front']
+
     },
     {
         "titulo": "Carrito de Compras",
@@ -137,7 +156,9 @@ let cards = [{
         "lenguaje": "Angular",
         "repo": "https://github.com/dsrrdiego/SDM.git",
         "link": "https://stackblitz.com/~/github.com/dsrrdiego/SDM",
-        "linkTexto": "Visitar!!!"
+        "linkTexto": "Visitar!!!",
+        "tags": ['web', 'front']
+
     },
     {
         "titulo": "La Tierra Ataca",

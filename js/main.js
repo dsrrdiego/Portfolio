@@ -39,10 +39,10 @@ function crearArticulos(cards) {
     let string = '';
     for (const card of cards) {
         string += '<article>';
-        // if (card.video != "") string += '<div class="video"><iframe class="video" src="' + card.video + '" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div>';
-        // else {
-        //     string += '<img class="video" src="imagenes/' + card.imagen + '"></img>';
-        // }
+        if (card.video != "") string += '<div class="video"><iframe class="video" src="' + card.video + '" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div>';
+        else {
+            string += '<img class="video" src="imagenes/' + card.imagen + '"></img>';
+        }
         string += '<div class="titulo"><h2>' + card.titulo + '</h2></div>';
         string += '<div class="datos"> <div class="categoria"> <h3>' + card.categoria + '</h3> </div>'
         string += '<div class="categoria fecha"><h5>' + card.fecha + '</h5></div>';
@@ -53,4 +53,15 @@ function crearArticulos(cards) {
         string += '</article>';
     }
     return string;
+}
+
+
+document.getElementById("wasapIcon").addEventListener("click", enviar);
+
+function enviar() {
+    var link =
+        "https://wa.me/" +
+        "+5492983606824" +
+        "?text=" + "Hola, quiero comunicarme con vos";
+    window.open(link);
 }
