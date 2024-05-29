@@ -1,12 +1,10 @@
 + animacion de la lupa
-+ no hay cards!!
-+ remodelar crear tags de strig a objetos
-+ y carrusel de string a obj
-+ agregar tags de busqueda array
 + emprolijar carrusel css
 + agregar wasap
 + arreglar botones carrusel responsive
 + lets a consts
++ botones del carrusel desaparecer?
++ llenar con tags de verdad
 
 > portfolio recomendaciones:
 # agregar readme.md
