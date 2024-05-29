@@ -6,6 +6,16 @@
     scroll-behavior: smooth;
 }
 
+.carruselContenedorInterno {
+    width: 75%;
+    margin-left: 6%;
+    background-color: rgba(207, 186, 186, 0.384);
+    padding: 0.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 10px;
+}
+
 .carruselBtn {
     position: absolute;
     background-color: rgba(81, 128, 93, 0.432);
@@ -18,7 +28,7 @@
     font-size: 40px;
     font-weight: 600;
     color: rgb(38, 68, 68);
-    transition: border-radius 0.5s ease;
+    transition: border-radius 0.5s ease, background-color 1s;
 }
 
 .carruselBtn:hover {
@@ -32,15 +42,10 @@
 }
 
 .carruselSlide {
-    width: 75%;
-    margin-left: 6%;
-    background-color: rgba(207, 186, 186, 0.384);
-    padding: 0.5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 2%;
+    border-radius: 10px;
 }
 
 .carruselInvisible {
     display: none;
+
 }

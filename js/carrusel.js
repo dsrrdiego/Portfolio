@@ -3,6 +3,8 @@ class Carrusel {
         this.carrusel = document.createElement('div');
         this.carrusel.classList.add('flex');
 
+        this.contenedorInterno = document.createElement('div');
+        this.contenedorInterno.classList.add('carruselContenedorInterno');
 
         this.btnMenos = document.createElement('button');
         this.btnMenos.innerHTML = "<";
@@ -24,7 +26,8 @@ class Carrusel {
 
 
         this.carrusel.appendChild(this.btnMenos);
-        this.carrusel.appendChild(this.slide);
+        this.contenedorInterno.appendChild(this.slide);
+        this.carrusel.appendChild(this.contenedorInterno);
         this.carrusel.appendChild(this.btnMas);
         padre.innerHTML = "";
         padre.appendChild(this.carrusel);
