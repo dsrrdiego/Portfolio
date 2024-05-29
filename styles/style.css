@@ -148,6 +148,14 @@ h1 {
     margin: 2.5%;
 }
 
+.noHayCards {
+    font-size: 40px;
+    background-color: var(--color);
+    text-wrap: wrap;
+    padding: 2%;
+    border-radius: 10px;
+}
+
 article {
     position: relative;
     width: 20%;
@@ -230,7 +238,7 @@ article:hover {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: rgb(71, 168, 71);
+    background-color: var(--color);
 }
 
 
@@ -238,6 +246,11 @@ footer h3 {
     color: white;
     text-align: center;
     margin: 8px;
+}
+
+footer h1 {
+    width: 100%;
+    text-align: center;
 }
 
 .footerMas {
@@ -258,7 +271,7 @@ footer h3 {
     }
 
     100% {
-        height: 20%;
+        height: 15%;
 
     }
 }

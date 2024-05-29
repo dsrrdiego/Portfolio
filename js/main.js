@@ -1,12 +1,40 @@
 renderFiltros(tags);
 filtrar();
 
+
+
 function render(filtrados) {
-    let articulos = crearArticulos(filtrados);
-    let carruselDiv = document.getElementById('carrusel');
-    let carrusel = new Carrusel(carruselDiv, articulos);
+    const carruselDiv = document.getElementById('carrusel');
+    if (filtrados.length != 0) {
+        const articulos = crearArticulos(filtrados);
+        const carrusel = new Carrusel(carruselDiv, articulos);
+    } else {
+        const noHayCards = document.createElement('h1');
+        noHayCards.innerHTML = "No hay Trabajos que coincidan con tu busqueda";
+        noHayCards.classList.add('noHayCards');
+        carruselDiv.innerHTML = '';
+
+        carruselDiv.appendChild(noHayCards);
+    }
+
 }
 
+
+const footer = document.getElementById('footer');
+const footerMas = document.getElementById('footerMas');
+
+window.addEventListener('scroll', function() {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        footer.classList.add('agrandarFooter');
+        footerMas.classList.remove('footerMas');
+    } else {
+        footer.classList.remove('agrandarFooter');
+        footerMas.classList.add('footerMas');
+    }
+});
+
+
+// AUXILIARES
 function crearArticulos(cards) {
     let string = '';
     for (const card of cards) {
@@ -26,16 +54,3 @@ function crearArticulos(cards) {
     }
     return string;
 }
-
-const footer = document.getElementById('footer');
-const footerMas = document.getElementById('footerMas');
-
-window.addEventListener('scroll', function() {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        footer.classList.add('agrandarFooter');
-        footerMas.classList.remove('footerMas');
-    } else {
-        footer.classList.remove('agrandarFooter');
-        footerMas.classList.add('footerMas');
-    }
-});
