@@ -7,7 +7,8 @@ let cards = [{
         "lenguaje": "Flutter",
         "repo": "https://github.com/dsrrdiego/notas.git",
         "link": "",
-        "linkTexto": "Visitar!!"
+        "linkTexto": "Visitar!!",
+        "tags": ['Android', 'xxx', 'otorrino']
     },
     {
         "titulo": "Instituto de la Caridad Universa",
@@ -18,7 +19,8 @@ let cards = [{
         "lenguaje": "JavaScript",
         "repo": "https://github.com/dsrrdiego/I.C.U..git",
         "link": "https://dsrrdiego.github.io/I.C.U./",
-        "linkTexto": "Visitar!!"
+        "linkTexto": "Visitar!!",
+
     },
     {
         "titulo": "Emerge Cultural",
@@ -41,7 +43,9 @@ let cards = [{
         "lenguaje": "Python",
         "repo": "https://github.com/dsrrdiego/zCom.git",
         "link": "",
-        "linkTexto": ""
+        "linkTexto": "",
+        "tags": ['zzz', 'xxx', 'otorrino']
+
     },
     {
         "titulo": "Paint",
@@ -63,7 +67,9 @@ let cards = [{
         "lenguaje": "JavaScript",
         "repo": "https://github.com/dsrrdiego/KatyMath.git",
         "link": "http://mattykatt.com.ar",
-        "linkTexto": "Jugar!!!"
+        "linkTexto": "Jugar!!!",
+        "tags": ['Android', 'xxx', 'otorrino']
+
     },
     {
         "titulo": "GALAXY",

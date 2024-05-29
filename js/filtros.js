@@ -55,9 +55,22 @@ function filtrado(cards, claves) {
         for (let p of claves) {
             p = p.toLowerCase();
             for (let attr in c) {
-                if (c[attr].toLowerCase().includes(p)) {
-                    agregar = true;
-                    break;
+                if (typeof c[attr] === 'string') {
+                    if (c[attr].toLowerCase().includes(p)) {
+                        agregar = true;
+                        break;
+                    }
+                } else if (Array.isArray(c[attr])) {
+                    for (const key of c[attr]) {
+                        if (key.toLowerCase().includes(p)) {
+                            console.log(key, 'tiene' + p)
+                            agregar = true;
+                            break;
+                        }
+
+                    }
+                    if (agregar) break;
+
                 }
                 agregar = false;
             }
