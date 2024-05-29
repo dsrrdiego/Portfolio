@@ -5,6 +5,8 @@
 + lets a consts
 + botones del carrusel desaparecer?
 + llenar con tags de verdad
++ agregar carrusel a los cards!!! como Componentes Web
++ mas animaciones
 
 > portfolio recomendaciones:
 # agregar readme.md
