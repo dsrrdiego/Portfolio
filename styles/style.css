@@ -158,7 +158,6 @@ h1 {
 
 article {
     position: relative;
-    width: 20%;
     min-width: 350px;
     background-color: var(--color);
 
@@ -167,12 +166,17 @@ article {
     margin-right: 1%;
     border-radius: var(--miRadio);
     transition: 0.3s width;
-    min-height: 470px;
-    /* height: 41vw; */
+    height: 520px;
+    --t: 0.3s;
+    transition: background-color var(--t) ease, min-width var(--t) ease, height var(--t) ease, left var(--t) ease, top var(--t) ease;
 }
 
 article:hover {
-    width: 25%;
+    background-color: rgb(93, 134, 93);
+    min-width: 360px;
+    height: 530;
+    top: -5px;
+
 }
 
 .video {
