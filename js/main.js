@@ -7,7 +7,7 @@ function render(filtrados) {
     const carruselDiv = document.getElementById('carrusel');
     if (filtrados.length != 0) {
         const articulos = crearArticulos(filtrados);
-        const carrusel = new Carrusel(carruselDiv, articulos);
+        const carrusel = new Carrusel2(carruselDiv, articulos);
     } else {
         const noHayCards = document.createElement('h1');
         noHayCards.innerHTML = "No hay Trabajos que coincidan con tu busqueda";
@@ -36,9 +36,11 @@ window.addEventListener('scroll', function() {
 
 // AUXILIARES
 function crearArticulos(cards) {
-    let string = '';
+    let resultado = [];
     for (const card of cards) {
-        string += '<article>';
+        const articulo = document.createElement('article');
+        let string = '';
+
         if (card.video != "") string += '<div class="video"><iframe class="video" src="' + card.video + '" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div>';
         else {
             string += '<img class="video" src="imagenes/' + card.imagen + '"></img>';
@@ -49,10 +51,11 @@ function crearArticulos(cards) {
         string += '<div class="descripcion"><h4>' + card.descripcion + '</h4> </div> <br>';
         string += '<div class="lenguaje"> <h4>Lenguaje: ' + card.lenguaje + '</h4></div>';
         if (card.repo != "") string += '<div class="repo"><a target="_blank" class="repoLink" href="' + card.repo + '">Ir al Repositorio GitHub</a></h4></div>';
-        if (card.link != "") string += '<button class="boton"> <a target="_blank" href="' + card.link + '">' + card.linkTexto + '</a> </button></div></article>';
-        string += '</article>';
+        if (card.link != "") string += '<button class="boton"> <a target="_blank" href="' + card.link + '">' + card.linkTexto + '</a> </button></div>';
+        articulo.innerHTML = string;
+        resultado.push(articulo);
     }
-    return string;
+    return resultado;
 }
 
 

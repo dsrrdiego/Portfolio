@@ -119,6 +119,19 @@ let cards = [{
 
     },
     {
+        "titulo": "Mi Boostrap",
+        "video": "",
+        "imagen": "carrusel.webp",
+        "categoria": "Bibilioteca",
+        "fecha": "2024",
+        "descripcion": "Biblioteca de Elementos WEB para incorporar en tus HTML de manera muy sencilla",
+        "lenguaje": "JavaScript",
+        "repo": "https://github.com/dsrrdiego/miBoostrap.git",
+        "link": "https://dsrrdiego.github.io/miBoostrap/",
+        "linkTexto": "Visitar!!!",
+        "tags": ['web', 'grafics', 'front', 'boostrap', 'biblioteca']
+    },
+    {
         "titulo": "Greedy y Backtracking",
         "video": "",
         "imagen": "subte.png",
