@@ -115,7 +115,7 @@ let cards = [{
         "repo": "https://github.com/dsrrdiego/manipular-graficos.git",
         "link": "https://dsrrdiego.github.io/manipular-graficos/",
         "linkTexto": "Visitar!!!",
-        "tags": ['web', 'grafics', 'front']
+        "tags": ['web', 'grafics', 'front', 'sas']
 
     },
     {
