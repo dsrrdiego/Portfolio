@@ -7,7 +7,7 @@ function render(filtrados) {
     const carruselDiv = document.getElementById('carrusel');
     if (filtrados.length != 0) {
         const articulos = crearArticulos(filtrados);
-        const carrusel = new Carrusel2(carruselDiv, articulos);
+        const carrusel = new Carrusel(carruselDiv, articulos);
     } else {
         const noHayCards = document.createElement('h1');
         noHayCards.innerHTML = "No hay Trabajos que coincidan con tu busqueda";
