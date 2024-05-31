@@ -34,7 +34,7 @@ let cards = [{
         "repo": "https://github.com/dsrrdiego/emergeSpringBoot.git",
         "link": "https://dsrrdiego.github.io/emergeF/",
         "linkTexto": "Visitar",
-        "tags": ['web', 'app', 'aplication', 'front', 'back']
+        "tags": ['web', 'app', 'aplication', 'front', 'back','front','javascript','js']
 
     },
 
@@ -48,7 +48,7 @@ let cards = [{
         "repo": "https://github.com/dsrrdiego/zCom.git",
         "link": "",
         "linkTexto": "",
-        "tags": ['blender', '3d', 'red', 'socket ', 'graficos']
+        "tags": ['blender', '3d', 'red', 'socket ', 'graficos','juego','python']
 
     },
     {
@@ -61,7 +61,7 @@ let cards = [{
         "repo": "https://github.com/dsrrdiego/paint.git",
         "link": "https://dsrrdiego.github.io/paint/",
         "linkTexto": "Visitar!!!",
-        "tags": ['web', 'grafics', 'front']
+        "tags": ['web', 'grafics', 'front','sas','css','html','spa','software','service']
 
     },
     {
@@ -74,7 +74,7 @@ let cards = [{
         "repo": "https://github.com/dsrrdiego/KatyMath.git",
         "link": "http://mattykatt.com.ar",
         "linkTexto": "Jugar!!!",
-        "tags": ['web', 'grafics', 'front']
+        "tags": ['web', 'grafics', 'front','js','front']
 
 
     },
@@ -115,7 +115,7 @@ let cards = [{
         "repo": "https://github.com/dsrrdiego/manipular-graficos.git",
         "link": "https://dsrrdiego.github.io/manipular-graficos/",
         "linkTexto": "Visitar!!!",
-        "tags": ['web', 'grafics', 'front', 'sas']
+        "tags": ['web', 'grafics', 'front', 'sas','js','html','css']
 
     },
     {
@@ -129,7 +129,7 @@ let cards = [{
         "repo": "https://github.com/dsrrdiego/miBoostrap.git",
         "link": "https://dsrrdiego.github.io/miBoostrap/",
         "linkTexto": "Visitar!!!",
-        "tags": ['web', 'grafics', 'front', 'boostrap', 'biblioteca']
+        "tags": ['web', 'grafics', 'front', 'boostrap', 'biblioteca','js','javascript','html']
     },
     {
         "titulo": "Greedy y Backtracking",
@@ -156,7 +156,7 @@ let cards = [{
         "repo": "https://github.com/dsrrdiego/dado-3d.git",
         "link": "https://dsrrdiego.github.io/dado-3d/",
         "linkTexto": "Visitar!!!",
-        "tags": ['web', 'grafics', 'front']
+        "tags": ['web', 'grafics', 'front','juego','spa']
 
     },
     {

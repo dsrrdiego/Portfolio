@@ -51,7 +51,7 @@ function crearArticulos(cards) {
         string += '<div class="descripcion"><h4>' + card.descripcion + '</h4> </div> <br>';
         string += '<div class="lenguaje"> <h4>Lenguaje: ' + card.lenguaje + '</h4></div>';
         if (card.repo != "") string += '<div class="repo"><a target="_blank" class="repoLink" href="' + card.repo + '">Ir al Repositorio GitHub</a></h4></div>';
-        if (card.link != "") string += '<button class="boton"> <a target="_blank" href="' + card.link + '">' + card.linkTexto + '</a> </button></div>';
+        if (card.link != "") string += ' <a target="_blank" href="' + card.link + '"><button class="boton">' + card.linkTexto + ' </button></a></div>';
         articulo.innerHTML = string;
         resultado.push(articulo);
     }

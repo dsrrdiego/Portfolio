@@ -4,7 +4,7 @@ function renderFiltros(tags) {
     let btnsTag = [];
     let buscarPalabra = document.createElement('input');
     buscarPalabra.addEventListener("input", () => filtrar(buscarPalabra.value));
-    buscarPalabra.placeholder = "buscar"
+    buscarPalabra.placeholder = "buscar";
     sectionTags.appendChild(buscarPalabra);
 
     for (let i = 0; i < tags.length; i++) {
@@ -19,6 +19,7 @@ function renderFiltros(tags) {
 
     sectorTags.classList.toggle('inVisible');
     let bt = document.getElementById('btnBuscar').addEventListener('click', () => sectorTags.classList.toggle('inVisible'));
+    buscarPalabra.focus();
 
     function btnTag(i) {
         tags[i].activo = !tags[i].activo;
