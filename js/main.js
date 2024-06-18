@@ -64,7 +64,7 @@ document.getElementById("wasapIcon").addEventListener("click", enviar);
 function enviar() {
     var link =
         "https://wa.me/" +
-        "+5492983606824" +
+        "+5491135697470" +
         "?text=" + "Hola, quiero comunicarme con vos";
     window.open(link);
 }
