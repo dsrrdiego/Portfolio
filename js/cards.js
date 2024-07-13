@@ -79,6 +79,20 @@ let cards = [{
 
     },
     {
+        "titulo": "Dolar Hoy",
+        "video": "https://www.youtube.com/embed/m2ycTIqlbfE" ,
+        "categoria": "Bot",
+        "fecha": "2024",
+        "descripcion": "Secuencia automatizada para obtener los valores del Dolar Bolsa desde la web",
+        "lenguaje": "UIPath",
+        "repo": "",
+        "link": "",
+        "linkTexto": "",
+        "tags": ['web', 'bot', 'uipath','automatizacion']
+
+
+    },
+    {
         "titulo": "GALAXY",
         "video": "https://www.youtube.com/embed/r5a3XCqR1sU",
         "categoria": "Utilidad astronómica",
