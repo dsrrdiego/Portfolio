@@ -72,7 +72,7 @@ let cards = [{
         "descripcion": "Video Juego on -line Parallax Scroll para uno o dos jugadores",
         "lenguaje": "JavaScript",
         "repo": "https://github.com/dsrrdiego/KatyMath.git",
-        "link": "http://mattykatt.com.ar",
+        "link": "https://dsrrdiego.github.io/KatyMath/",
         "linkTexto": "Jugar!!!",
         "tags": ['web', 'grafics', 'front','js','front']
 
