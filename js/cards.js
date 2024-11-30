@@ -1,4 +1,29 @@
-let cards = [{
+let cards = [
+    {
+        "titulo": "AgroPrimusStock",
+        "video": "https://www.youtube.com/embed/r1Ko40EkHYY",
+        "categoria": "FLUTTER",
+        "fecha": "2024",
+        "descripcion": "Aplicación multiplataforma para llevar el Stock de una cerealera y mantener comunicados a sus trabajadores",
+        "lenguaje": "Flutter",
+        "repo": "https://github.com/dsrrdiego/agroprimusstock.git",
+        "link": "",
+        "linkTexto": "",
+        "tags": ['Android', 'web', 'app', 'aplication', 'linux','Excel','Firebase','push']
+    },
+    {
+        "titulo": "API nombre no disponible al publico",
+        "video": "https://www.youtube.com/embed/IfEKWjhnC78",
+        "categoria": "API",
+        "fecha": "2024",
+        "descripcion": "Api privada para servir datos a una App en desarrollo, incluye un Monitor para ver datos en tiempo real",
+        "lenguaje": "SPRING",
+        "repo": "",
+        "link": "",
+        "linkTexto": "",
+        "tags": ['Java', 'Spring', 'SpringBoot', 'Api', 'Restful','bd','h2','jwt','firebase','swagger','html','js','css']
+    },
+    {
         "titulo": "Micro-Notes & Tags",
         "video": "https://www.youtube.com/embed/opDXLnqacdA",
         "categoria": "FLUTTER",
@@ -22,6 +47,19 @@ let cards = [{
         "linkTexto": "Visitar!!",
         "tags": ['web', 'app', 'aplication', 'front']
 
+
+    },
+    {
+        "titulo": "Contenido Pedagógico",
+        "video": "https://www.youtube.com/embed/urMGJYHnhGw",
+        "categoria": "Docencia",
+        "fecha": "2023",
+        "descripcion": "Contenido generado para el dictado de FUNDAMENTOS DE LA PROGRAMACION de la UNICEN.",
+        "lenguaje": "General",
+        "repo": "",
+        "link": "",
+        "linkTexto": "",
+        "tags": ['Codigo', 'Programacion', 'if', 'condicion']
 
     },
     {
