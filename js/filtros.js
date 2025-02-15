@@ -1,8 +1,8 @@
 function renderFiltros(tags) {
-    let sectorTags = document.getElementById('sectionTags');
+    const sectorTags = document.getElementById('sectionTags');
     let filtro = [];
     let btnsTag = [];
-    let buscarPalabra = document.createElement('input');
+    const buscarPalabra = document.createElement('input');
     buscarPalabra.addEventListener("input", () => filtrar(buscarPalabra.value));
     buscarPalabra.placeholder = "buscar";
     sectionTags.appendChild(buscarPalabra);
@@ -18,7 +18,7 @@ function renderFiltros(tags) {
     }
 
     sectorTags.classList.toggle('inVisible');
-    let bt = document.getElementById('btnBuscar').addEventListener('click', () => sectorTags.classList.toggle('inVisible'));
+    const bt = document.getElementById('btnBuscar').addEventListener('click', () => sectorTags.classList.toggle('inVisible'));
     buscarPalabra.focus();
 
     function btnTag(i) {
@@ -47,37 +47,49 @@ function filtrar(palabraDelInput = '') {
 
 }
 
-
-
 function filtrado(cards, claves) {
-    let filtradas = [];
-    for (const c of cards) {
-        let agregar = false;
-        for (let p of claves) {
-            p = p.toLowerCase();
-            for (let attr in c) {
-                if (typeof c[attr] === 'string') {
-                    if (c[attr].toLowerCase().includes(p)) {
-                        agregar = true;
-                        break;
-                    }
-                } else if (Array.isArray(c[attr])) {
-                    for (const key of c[attr]) {
-                        if (key.toLowerCase().includes(p)) {
-                            console.log(key, 'tiene' + p)
-                            agregar = true;
-                            break;
-                        }
-
-                    }
-                    if (agregar) break;
-
-                }
-                agregar = false;
-            }
-            if (!agregar) break;
-        }
-        if (agregar) filtradas.push(c);
-    }
-    return filtradas;
+    claves = claves.map(p => p.toLowerCase());
+    
+    return cards.filter(c => 
+        claves.every(p => 
+            Object.values(c).some(attr => 
+                typeof attr === 'string' ? attr.toLowerCase().includes(p) :
+                Array.isArray(attr) ? attr.some(key => key.toLowerCase().includes(p)) :
+                false
+            )
+        )
+    );
 }
+
+// function filtrado(cards, claves) {
+//     let filtradas = [];
+//     for (const c of cards) {
+//         let agregar = false;
+//         for (let p of claves) {
+//             p = p.toLowerCase();
+//             for (let attr in c) {
+//                 if (typeof c[attr] === 'string') {
+//                     if (c[attr].toLowerCase().includes(p)) {
+//                         agregar = true;
+//                         break;
+//                     }
+//                 } else if (Array.isArray(c[attr])) {
+//                     for (const key of c[attr]) {
+//                         if (key.toLowerCase().includes(p)) {
+//                             console.log(key, 'tiene' + p)
+//                             agregar = true;
+//                             break;
+//                         }
+
+//                     }
+//                     if (agregar) break;
+
+//                 }
+//                 agregar = false;
+//             }
+//             if (!agregar) break;
+//         }
+//         if (agregar) filtradas.push(c);
+//     }
+//     return filtradas;
+// }
