@@ -1,7 +1,18 @@
+filtrosURL();
 renderFiltros(tags);
+
+
+
 filtrar();
 
+function filtrosURL() {
+    const params = new URLSearchParams(window.location.search);
+    let filtros = params.get("filtro");  
+    filtros=filtros.split(",");
+        tags=tags.map(t=>({...t,activo: filtros.includes(t.nombre)}))
+    
 
+}
 
 function render(filtrados) {
     const carruselDiv = document.getElementById('carrusel');
@@ -62,7 +73,7 @@ function crearArticulos(cards) {
 document.getElementById("wasapIcon").addEventListener("click", enviar);
 
 function enviar() {
-    var link =
+    const link =
         "https://wa.me/" +
         "+5491135697470" +
         "?text=" + "Hola, quiero comunicarme con vos";
