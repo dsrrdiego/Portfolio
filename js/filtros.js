@@ -38,9 +38,10 @@ function filtrar (palabraDelInput = '') {
     palabraDelInput,
     ...tags.filter(tag => tag.activo).map(tag => tag.nombre)
   ]
+  console.log('pala a buscar' + palabrasABuscar)
   const arrayConComa =
     palabrasABuscar.length > 0 ? `?filtro=${palabrasABuscar.join(',')}` : ''
-  history.pushState(null, '', window.location.pathname + arrayConComa)
+  history.pushState(null, '', window.location.pathname + arrayConComa.replaceAll(" ","%20"))
   render(filtrado(cards, palabrasABuscar))
 }
 
